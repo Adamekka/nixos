@@ -89,8 +89,17 @@
   };
 
   hardware = {
-    nvidia.modesetting.enable = true;
-    opengl.enable = true;
+    nvidia = {
+      modesetting.enable = true;
+      nvidiaSettings = true;
+      open = false;
+      package = config.boot.kernelPackages.nvidiaPackages.stable;
+    };
+    opengl = {
+      driSupport = true;
+      driSupport32Bit = true;
+      enable = true;
+    };
   };
 
   networking = {
@@ -157,6 +166,7 @@
     xserver = {
       enable = true;
       layout = "us";
+      videoDrivers = [ "nvidia" ];
     };
   };
 
