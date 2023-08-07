@@ -141,6 +141,7 @@
 
   services = {
     dbus.enable = true;
+    flatpak.enable = true;
     gnome.gnome-keyring.enable = true;
     pipewire = {
       alsa = {
