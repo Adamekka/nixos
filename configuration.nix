@@ -198,6 +198,8 @@
     shell = pkgs.fish;
   };
 
+  virtualisation.libvirtd.enable = true;
+
   xdg.portal = {
     enable = true;
     extraPortals = with pkgs; [
