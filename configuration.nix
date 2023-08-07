@@ -99,12 +99,6 @@
   };
 
   nix.settings = {
-    packageOverrides = pkgs: {
-      hyprland = pkgs.hyprland.override {
-        nvidiaPatches = true;
-        xwayland.enable = true;
-      };
-    };
     substituters = [
       "https://nix-gamig.cachix.org"
     ];
@@ -135,7 +129,7 @@
     };
     steam = {
       enable = true;
-      remotyPlay.openFirewall = true;
+      remotePlay.openFirewall = true;
       dedicatedServer.openFirewall = true;
     };
   };
