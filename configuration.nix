@@ -167,6 +167,11 @@
   sound.enable = true;
 
   system = {
+    autoUpgrade = {
+      allowReboot = true;
+      channel = "https://channels.nixos.org/nixos-unstable";
+      enable = true;
+    };
     copySystemConfiguration = true;
     stateVersion = "23.05";
   };
