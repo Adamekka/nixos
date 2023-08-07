@@ -19,6 +19,7 @@
       bash
       bat
       btop
+      cava
       clang
       cmake
       cmatrix
