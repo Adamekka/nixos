@@ -54,6 +54,7 @@
       ripgrep
       rofi-wayland
       rustup
+      sccache
       # spotify
       starship
       steam
