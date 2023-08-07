@@ -45,6 +45,7 @@
       neovim
       ninja
       nixpkgs-fmt
+      nur.repos.nltch.spotify-adblock
       obs-studio
       onefetch
       pfetch
@@ -53,6 +54,7 @@
       ripgrep
       rofi-wayland
       rustup
+      # spotify
       starship
       steam
       sway-contrib.grimshot
@@ -98,6 +100,11 @@
 
   nixpkgs.config = {
     allowUnfree = true;
+    packageOverrides = pkgs: {
+      nur = import (builtins.fetchTarball "https://github.com/nix-community/NUR/archive/master.tar.gz") {
+        inherit pkgs;
+      };
+    };
     permittedInsecurePackages = [
       #"openssl-1.1.1u"
       "openssl-1.1.1v"
