@@ -98,6 +98,21 @@
     wireless.userControlled.enable = true;
   };
 
+  nix.settings = {
+    packageOverrides = pkgs: {
+      hyprland = pkgs.hyprland.override {
+        nvidiaPatches = true;
+        xwayland.enable = true;
+      };
+    };
+    substituters = [
+      "https://nix-gamig.cachix.org"
+    ];
+    trusted-public-keys = [
+      "nix-gaming.cachix.org-1:nbjlureqMbRAxR1gJ/f3hxemL9svXaZF/Ees8vCUUs4="
+    ];
+  };
+
   nixpkgs.config = {
     allowUnfree = true;
     packageOverrides = pkgs: {
@@ -117,6 +132,11 @@
       enable = true;
       nvidiaPatches = true;
       xwayland.enable = true;
+    };
+    steam = {
+      enable = true;
+      remotyPlay.openFirewall = true;
+      dedicatedServer.openFirewall = true;
     };
   };
 
