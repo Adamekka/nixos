@@ -47,6 +47,7 @@
       ninja
       nixpkgs-fmt
       # nur.repos.nltch.spotify-adblock
+      nvtop
       obs-studio
       onefetch
       pfetch
