@@ -129,7 +129,10 @@
     hyprland = {
       enable = true;
       nvidiaPatches = true;
-      xwayland.enable = true;
+      xwayland = {
+        enable = true;
+        hidpi = true;
+      };
     };
     steam = {
       enable = true;
