@@ -51,6 +51,7 @@
       nvtop
       obs-studio
       onefetch
+      pavucontrol
       pfetch
       protonup-qt
       python3Full
