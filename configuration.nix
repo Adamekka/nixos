@@ -68,6 +68,7 @@
       unzip
       vim
       vivaldi
+      vlc
       vscode-fhs
       waybar
       (pkgs.waybar.overrideAttrs (oldAttrs: {
