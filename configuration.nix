@@ -44,6 +44,7 @@
       mangohud
       neofetch
       neovim
+      nethogs
       ninja
       nixpkgs-fmt
       # nur.repos.nltch.spotify-adblock
