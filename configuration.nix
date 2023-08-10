@@ -21,6 +21,7 @@
       bat
       btop
       cava
+      cbonsai
       clang
       cmake
       cmatrix
