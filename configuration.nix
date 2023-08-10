@@ -103,6 +103,7 @@
       driSupport32Bit = true;
       enable = true;
     };
+    pulseaudio.support32Bit = true;
   };
 
   networking = {
