@@ -168,7 +168,17 @@
     printing.enable = true;
     xserver = {
       enable = true;
+      displayManager = {
+        gdm = {
+          enable = true;
+          wayland = true;
+        };
+        sessionPackages = with pkgs; [
+          hyprland
+        ];
+      };
       layout = "us";
+      libinput.enable = true;
       videoDrivers = [ "nvidia" ];
     };
   };
