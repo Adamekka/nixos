@@ -148,6 +148,7 @@
   };
 
   services = {
+    accounts-daemon.enable = true;
     dbus.enable = true;
     flatpak.enable = true;
     gnome.gnome-keyring.enable = true;
