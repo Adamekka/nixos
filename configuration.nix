@@ -37,8 +37,8 @@
       git
       github-desktop
       gnumake
+      grim
       handbrake
-      hyprland
       libnotify
       mako
       mangohud
@@ -58,6 +58,7 @@
       rofi-wayland
       rustup
       sccache
+      slurp
       # spotify
       starship
       steam
