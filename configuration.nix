@@ -22,7 +22,6 @@
       btop
       cava
       cbonsai
-      clang
       cmake
       cmatrix
       discord
