@@ -40,6 +40,7 @@
       gparted
       grim
       handbrake
+      htop-vim
       killall
       libnotify
       mako
