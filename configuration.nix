@@ -57,6 +57,7 @@
       onefetch
       pavucontrol
       pfetch
+      playerctl
       protonup-qt
       python3Full
       ripgrep
