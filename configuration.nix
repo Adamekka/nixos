@@ -38,6 +38,7 @@
       git
       github-desktop
       gnumake
+      gparted
       grim
       handbrake
       libnotify
