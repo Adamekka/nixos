@@ -41,6 +41,7 @@
       gparted
       grim
       handbrake
+      killall
       libnotify
       mako
       mangohud
