@@ -61,9 +61,7 @@
       rustup
       sccache
       slurp
-      # spotify
       starship
-      steam
       sway-contrib.grimshot
       telegram-desktop
       tldr
@@ -72,7 +70,6 @@
       vivaldi
       vlc
       vscode-fhs
-      waybar
       (pkgs.waybar.overrideAttrs (oldAttrs: {
         mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ];
       }))
