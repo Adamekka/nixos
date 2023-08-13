@@ -49,6 +49,7 @@
       nethogs
       ninja
       nixpkgs-fmt
+      nodejs_20
       nur.repos.nltch.spotify-adblock
       nvtop
       obs-studio
