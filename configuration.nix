@@ -20,6 +20,7 @@
       bash
       bat
       btop
+      cargo-outdated
       cava
       cbonsai
       cmake
