@@ -1,0 +1,44 @@
+[alacritty]
+name = "alacritty"
+path = "~/.config/alacritty"
+git_path = "https://github.com/Adamekka/alacritty.git"
+
+[dwm]
+name = "dwm"
+path = "~/.config/dwm"
+git_path = "https://github.com/Adamekka/dwm.git"
+
+[fish]
+name = "fish"
+path = "~/.config/fish"
+git_path = "https://github.com/Adamekka/fish.git"
+
+[hypr]
+name = "hypr"
+path = "~/.config/hypr"
+git_path = "https://github.com/Adamekka/hypr.git"
+
+[picom]
+name = "picom"
+path = "~/.config/picom"
+git_path = "https://github.com/Adamekka/picom.git"
+
+[st]
+name = "st"
+path = "~/.config/st"
+git_path = "https://github.com/Adamekka/st.git"
+
+[waybar]
+name = "waybar"
+path = "~/.config/waybar"
+git_path = "https://github.com/Adamekka/waybar.git"
+
+[xmobar]
+name = "xmobar"
+path = "~/.config/xmobar"
+git_path = "https://github.com/Adamekka/xmobar.git"
+
+[xmonad]
+name = "xmonad"
+path = "~/.config/xmonad"
+git_path = "https://github.com/Adamekka/xmonad.git"
