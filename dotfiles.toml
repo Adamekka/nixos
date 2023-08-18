@@ -18,6 +18,11 @@ name = "hypr"
 path = "~/.config/hypr"
 git_path = "https://github.com/Adamekka/hypr.git"
 
+[mako]
+name = "mako"
+path = "~/.config/mako"
+git_path = "https://github.com/Adamekka/mako.git"
+
 [picom]
 name = "picom"
 path = "~/.config/picom"
