@@ -59,6 +59,7 @@
       pavucontrol
       pfetch
       playerctl
+      prismlauncher
       protonup-qt
       python3Full
       ripgrep
