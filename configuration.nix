@@ -17,40 +17,40 @@
     };
     systemPackages = with pkgs; [
       alacritty
-      bacon
-      bash
+      # bacon
+      # bash
       bat
       btop
-      cargo-outdated
+      # cargo-outdated
       cava
       cbonsai
-      cmake
+      # cmake
       cmatrix
       discord
       du-dust
-      eww
+      # eww
       exa
       fd
       fish
       fzf
-      gcc
+      # gcc
       gh
       gimp
       git
       github-desktop
-      gnumake
+      # gnumake
       gparted
-      grim
+      # grim
       handbrake
-      htop-vim
+      # htop-vim
       killall
-      libnotify
+      # libnotify
       mako
-      mangohud
+      # mangohud
       neofetch
       neovim
       nethogs
-      ninja
+      # ninja
       nixpkgs-fmt
       nodejs_20
       nur.repos.nltch.spotify-adblock
@@ -61,19 +61,19 @@
       pfetch
       playerctl
       prismlauncher
-      protonup-qt
+      # protonup-qt
       python3Full
       ripgrep
       rofi-wayland
-      rustup
+      # rustup
       sccache
-      slurp
+      # slurp
       starship
       sway-contrib.grimshot
       telegram-desktop
       tldr
       unzip
-      vim
+      # vim
       vivaldi
       vlc
       vscode-fhs
@@ -81,9 +81,9 @@
         mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ];
       }))
       wget
-      wine
+      # wine
       xfce.thunar
-      zellij
+      # zellij
     ];
   };
 
