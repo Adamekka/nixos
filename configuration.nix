@@ -18,6 +18,7 @@
     };
     systemPackages = with pkgs; [
       alacritty
+      ani-cli
       # bacon
       # bash
       bat
