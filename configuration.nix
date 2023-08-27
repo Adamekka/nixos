@@ -49,6 +49,7 @@
       # libnotify
       mako
       # mangohud
+      mpv
       neofetch
       neovim
       nethogs
