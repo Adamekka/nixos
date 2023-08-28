@@ -28,6 +28,11 @@ name = "picom"
 path = "~/.config/picom"
 git_path = "https://github.com/Adamekka/picom.git"
 
+[rofi]
+name = "rofi"
+path = "~/.config/rofi"
+git_path = "https://github.com/Adamekka/rofi.git"
+
 [st]
 name = "st"
 path = "~/.config/st"
