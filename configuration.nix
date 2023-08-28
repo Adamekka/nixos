@@ -145,10 +145,9 @@
     fish.enable = true;
     hyprland = {
       enable = true;
-      nvidiaPatches = true;
+      enableNvidiaPatches = true;
       xwayland = {
         enable = true;
-        hidpi = true;
       };
     };
     steam = {
