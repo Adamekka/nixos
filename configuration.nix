@@ -223,12 +223,18 @@
   time.timeZone = "Europe/Prague";
 
   users.users.adamekka = {
-    extraGroups = [ "wheel" ];
+    extraGroups = [
+      "docker"
+      "wheel"
+    ];
     isNormalUser = true;
     shell = pkgs.fish;
   };
 
-  virtualisation.libvirtd.enable = true;
+  virtualisation = {
+    docker.enable = true;
+    libvirtd.enable = true;
+  };
 
   xdg.portal = {
     enable = true;
