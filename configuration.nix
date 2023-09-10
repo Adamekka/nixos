@@ -30,7 +30,7 @@
       discord
       du-dust
       # eww
-      exa
+      eza
       fd
       fish
       fzf
