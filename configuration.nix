@@ -46,6 +46,7 @@
       # htop-vim
       killall
       # libnotify
+      libreoffice
       mako
       # mangohud
       mpv
