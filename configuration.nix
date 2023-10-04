@@ -84,7 +84,7 @@
         mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ];
       }))
       wget
-      # wine
+      wine-staging
       xfce.thunar
       # zellij
     ];
