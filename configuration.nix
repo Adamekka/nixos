@@ -18,6 +18,7 @@
     };
     systemPackages = with pkgs; [
       alacritty
+      android-studio
       # bacon
       # bash
       bat
