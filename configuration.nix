@@ -143,6 +143,7 @@
   };
 
   programs = {
+    adb.enable = true;
     fish.enable = true;
     hyprland = {
       enable = true;
@@ -225,6 +226,7 @@
 
   users.users.adamekka = {
     extraGroups = [
+      "adbusers"
       "docker"
       "wheel"
     ];
