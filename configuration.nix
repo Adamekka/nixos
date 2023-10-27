@@ -28,6 +28,7 @@
       cbonsai
       # cmake
       cmatrix
+      davinci-resolve
       discord
       du-dust
       # eww
