@@ -48,6 +48,7 @@
       killall
       # libnotify
       libreoffice
+      logmein-hamachi
       mako
       # mangohud
       mpv
