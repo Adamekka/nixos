@@ -91,6 +91,7 @@
       xfce.thunar
       # zellij
       zip
+      zulu8
     ];
   };
 
