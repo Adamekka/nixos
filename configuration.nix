@@ -184,6 +184,7 @@
       pulse.enable = true;
     };
     printing.enable = true;
+    tailscale.enable = true;
     xserver = {
       enable = true;
       displayManager = {
