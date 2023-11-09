@@ -90,6 +90,7 @@
       wine-staging
       xfce.thunar
       # zellij
+      zip
     ];
   };
 
