@@ -69,6 +69,7 @@
       prismlauncher
       # protonup-qt
       python3Full
+      qbittorrent
       ripgrep
       rofi-wayland
       # rustup
