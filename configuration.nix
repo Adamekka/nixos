@@ -59,6 +59,7 @@
       # ninja
       nixpkgs-fmt
       nodejs_20
+      ntfs3g
       nur.repos.nltch.spotify-adblock
       nvtop
       obs-studio
