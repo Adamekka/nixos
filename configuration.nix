@@ -8,7 +8,10 @@
       ./secret.nix
     ];
 
-  boot.loader.systemd-boot.enable = true;
+  boot = {
+    kernelModules = [ "nvidia_uvm" ];
+    loader.systemd-boot.enable = true;
+  };
 
   environment = {
     binsh = "${pkgs.dash}/bin/dash";
