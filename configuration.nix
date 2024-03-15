@@ -187,6 +187,10 @@
       jack.enable = true;
       pulse.enable = true;
     };
+    openssh = {
+      enable = true;
+      settings.PasswordAuthentication = true;
+    };
     printing.enable = true;
     tailscale.enable = true;
     xserver = {
