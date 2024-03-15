@@ -161,6 +161,11 @@
         enable = true;
       };
     };
+    nix-ld = {
+      enable = true;
+      libraries = with pkgs; [
+      ];
+    };
     steam = {
       enable = true;
       remotePlay.openFirewall = true;
