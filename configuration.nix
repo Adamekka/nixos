@@ -37,6 +37,7 @@
       # eww
       eza
       fd
+      ffmpeg
       fish
       fzf
       # gcc
