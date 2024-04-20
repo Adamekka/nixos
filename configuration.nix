@@ -172,6 +172,7 @@
       remotePlay.openFirewall = true;
       dedicatedServer.openFirewall = true;
     };
+    virt-manager.enable = true;
   };
 
   security = {
@@ -248,6 +249,7 @@
     extraGroups = [
       "adbusers"
       "docker"
+      "libvirtd"
       "wheel"
     ];
     isNormalUser = true;
