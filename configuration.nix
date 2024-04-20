@@ -211,9 +211,9 @@
           hyprland
         ];
       };
-      layout = "us";
       libinput.enable = true;
       videoDrivers = [ "nvidia" ];
+      xkb.layout = "us";
     };
   };
 
