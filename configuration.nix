@@ -65,7 +65,7 @@
       nodejs_20
       ntfs3g
       nur.repos.nltch.spotify-adblock
-      nvtop
+      nvtopPackages.full
       obs-studio
       onefetch
       pavucontrol
@@ -183,6 +183,9 @@
   services = {
     accounts-daemon.enable = true;
     dbus.enable = true;
+    displayManager.sessionPackages = with pkgs; [
+      hyprland
+    ];
     flatpak.enable = true;
     gnome.gnome-keyring.enable = true;
     pipewire = {
@@ -207,9 +210,6 @@
           enable = true;
           wayland = true;
         };
-        sessionPackages = with pkgs; [
-          hyprland
-        ];
       };
       libinput.enable = true;
       videoDrivers = [ "nvidia" ];
