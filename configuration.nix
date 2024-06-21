@@ -16,8 +16,8 @@
   environment = {
     binsh = "${pkgs.dash}/bin/dash";
     sessionVariables = {
-      WLR_NO_HARDWARE_CURSORS = "1";
       NIXOS_OZONE_WL = "1";
+      WLR_NO_HARDWARE_CURSORS = "1";
     };
     systemPackages = with pkgs; [
       alacritty
@@ -117,6 +117,10 @@
 
   hardware = {
     bluetooth.enable = true;
+    graphics = {
+      enable = true;
+      enable32Bit = true;
+    };
     nvidia = {
       modesetting.enable = true;
       nvidiaSettings = true;
@@ -159,9 +163,7 @@
     fish.enable = true;
     hyprland = {
       enable = true;
-      xwayland = {
-        enable = true;
-      };
+      xwayland.enable = true;
     };
     nix-ld = {
       enable = true;
@@ -169,8 +171,8 @@
     };
     steam = {
       enable = true;
-      remotePlay.openFirewall = true;
       dedicatedServer.openFirewall = true;
+      remotePlay.openFirewall = true;
     };
     virt-manager.enable = true;
   };
@@ -188,6 +190,11 @@
     ];
     flatpak.enable = true;
     gnome.gnome-keyring.enable = true;
+    libinput.enable = true;
+    openssh = {
+      enable = true;
+      settings.PasswordAuthentication = true;
+    };
     pipewire = {
       alsa = {
         enable = true;
@@ -196,10 +203,6 @@
       enable = true;
       jack.enable = true;
       pulse.enable = true;
-    };
-    openssh = {
-      enable = true;
-      settings.PasswordAuthentication = true;
     };
     printing.enable = true;
     tailscale.enable = true;
@@ -211,7 +214,6 @@
           wayland = true;
         };
       };
-      libinput.enable = true;
       videoDrivers = [ "nvidia" ];
       xkb.layout = "us";
     };
