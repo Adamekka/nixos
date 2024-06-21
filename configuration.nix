@@ -21,7 +21,7 @@
     };
     systemPackages = with pkgs; [
       alacritty
-      android-studio
+      # android-studio
       # bacon
       # bash
       bat
@@ -31,7 +31,7 @@
       cbonsai
       # cmake
       cmatrix
-      davinci-resolve
+      # davinci-resolve
       discord
       du-dust
       # eww
@@ -48,7 +48,7 @@
       # gnumake
       gparted
       # grim
-      handbrake
+      # handbrake
       # htop-vim
       killall
       # libnotify
@@ -62,11 +62,11 @@
       nethogs
       # ninja
       nixpkgs-fmt
-      nodejs_20
-      ntfs3g
-      nur.repos.nltch.spotify-adblock
+      # nodejs_20
+      # ntfs3g
+      # nur.repos.nltch.spotify-adblock
       nvtopPackages.full
-      obs-studio
+      # obs-studio
       onefetch
       pavucontrol
       pfetch
@@ -80,6 +80,7 @@
       # rustup
       sccache
       # slurp
+      spotify
       starship
       sway-contrib.grimshot
       telegram-desktop
@@ -87,7 +88,7 @@
       unzip
       # vim
       vivaldi
-      vlc
+      # vlc
       vscode-fhs
       (pkgs.waybar.overrideAttrs (oldAttrs: {
         mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ];
