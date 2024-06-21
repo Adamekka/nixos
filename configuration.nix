@@ -44,6 +44,7 @@
       gh
       gimp
       git
+      git-lfs
       github-desktop
       # gnumake
       gparted
