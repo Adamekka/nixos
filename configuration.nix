@@ -124,7 +124,6 @@
       package = config.boot.kernelPackages.nvidiaPackages.stable;
     };
     opengl = {
-      driSupport = true;
       driSupport32Bit = true;
       enable = true;
     };
