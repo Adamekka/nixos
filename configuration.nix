@@ -121,17 +121,16 @@
 
   hardware = {
     bluetooth.enable = true;
+    graphics = {
+      enable = true;
+      enable32Bit = true;
+    };
     nvidia = {
       modesetting.enable = true;
       nvidiaSettings = true;
       open = false;
       package = config.boot.kernelPackages.nvidiaPackages.stable;
     };
-    opengl = {
-      driSupport32Bit = true;
-      enable = true;
-    };
-    pulseaudio.support32Bit = true;
   };
 
   networking = {
@@ -186,9 +185,12 @@
   services = {
     accounts-daemon.enable = true;
     dbus.enable = true;
-    displayManager.sessionPackages = with pkgs; [
-      hyprland
-    ];
+    displayManager = {
+      sessionPackages = with pkgs; [
+        hyprland
+      ];
+      sddm.enable = true;
+    };
     flatpak.enable = true;
     gnome.gnome-keyring.enable = true;
     libinput.enable = true;
@@ -206,10 +208,10 @@
       pulse.enable = true;
     };
     printing.enable = true;
+    pulseaudio.support32Bit = true;
     tailscale.enable = true;
     xserver = {
       enable = true;
-      displayManager.sddm.enable = true;
       videoDrivers = [ "nvidia" ];
       xkb.layout = "us";
     };
