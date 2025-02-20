@@ -110,11 +110,12 @@
     packages = with pkgs; [
       font-awesome
       noto-fonts
-      noto-fonts-cjk
+      noto-fonts-cjk-sans
       noto-fonts-emoji
       noto-fonts-extra
       ubuntu_font_family
-      (nerdfonts.override { fonts = [ "FiraCode" "UbuntuMono" ]; })
+      pkgs.nerd-fonts._0xproto
+      pkgs.nerd-fonts.droid-sans-mono
     ];
   };
 
