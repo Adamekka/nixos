@@ -121,10 +121,6 @@
 
   hardware = {
     bluetooth.enable = true;
-    graphics = {
-      enable = true;
-      enable32Bit = true;
-    };
     nvidia = {
       modesetting.enable = true;
       nvidiaSettings = true;
@@ -157,8 +153,9 @@
       };
     };
     permittedInsecurePackages = [
-      #"openssl-1.1.1u"
-      "openssl-1.1.1v"
+      # "openssl-1.1.1u"
+      # "openssl-1.1.1v"
+      # "qbittorrent-4.6.4"
     ];
   };
 
@@ -222,8 +219,6 @@
       xkb.layout = "us";
     };
   };
-
-  sound.enable = true;
 
   system = {
     copySystemConfiguration = true;
