@@ -191,7 +191,7 @@
       ];
       sddm.enable = true;
     };
-    flatpak.enable = true;
+    # flatpak.enable = true;
     gnome.gnome-keyring.enable = true;
     libinput.enable = true;
     openssh = {
