@@ -50,11 +50,12 @@
       gparted
       # grim
       # handbrake
+      heroic
       # htop-vim
       killall
       # libnotify
       libreoffice
-      logmein-hamachi
+      lutris
       mako
       # mangohud
       mpv
@@ -67,13 +68,14 @@
       # ntfs3g
       # nur.repos.nltch.spotify-adblock
       nvtopPackages.full
-      # obs-studio
+      obs-studio
       onefetch
+      osu-lazer-bin
       pavucontrol
       pfetch
       playerctl
       prismlauncher
-      # protonup-qt
+      protonup-qt
       python3Full
       qbittorrent
       ripgrep
@@ -97,6 +99,7 @@
       wget
       wine-staging
       xfce.thunar
+      xwaylandvideobridge
       # zellij
       zip
       zulu8
