@@ -139,6 +139,7 @@
 
   networking = {
     firewall.enable = false;
+    hostName = "nixos";
     networkmanager.enable = true;
     wireless.userControlled.enable = true;
   };
@@ -168,6 +169,14 @@
     hyprland = {
       enable = true;
       xwayland.enable = true;
+    };
+    nh = {
+      clean = {
+        enable = true;
+        extraArgs = "--keep-since 14d --keep 15";
+      };
+      enable = true;
+      flake = "/etc/nixos";
     };
     nix-ld = {
       enable = true;
@@ -222,7 +231,7 @@
   };
 
   system = {
-    copySystemConfiguration = true;
+    copySystemConfiguration = false;
     stateVersion = "23.05";
   };
 
