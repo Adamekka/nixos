@@ -69,7 +69,7 @@
       # ninja
       nixpkgs-fmt
       # nodejs_20
-      # ntfs3g
+      ntfs3g
       # nur.repos.nltch.spotify-adblock
       nvtopPackages.full
       obs-studio
