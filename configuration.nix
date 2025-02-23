@@ -22,13 +22,16 @@
     systemPackages = with pkgs; [
       alacritty
       # android-studio
-      # bacon
+      asmfmt
+      bacon
       # bash
       bat
       btop
       # cargo-outdated
       cava
       cbonsai
+      clang
+      clang-tools
       # cmake
       cmatrix
       # davinci-resolve
@@ -40,13 +43,13 @@
       ffmpeg
       fish
       fzf
-      # gcc
+      gcc
       gh
       gimp
       git
       git-lfs
       github-desktop
-      # gnumake
+      gnumake
       gparted
       # grim
       # handbrake
@@ -59,6 +62,7 @@
       mako
       # mangohud
       mpv
+      nasm
       neofetch
       neovim
       nethogs
