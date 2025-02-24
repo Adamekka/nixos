@@ -55,6 +55,7 @@
       # handbrake
       heroic
       # htop-vim
+      kdePackages.xwaylandvideobridge
       killall
       # libnotify
       libreoffice
@@ -103,7 +104,6 @@
       wget
       wine-staging
       xfce.thunar
-      xwaylandvideobridge
       # zellij
       zip
       zulu8
