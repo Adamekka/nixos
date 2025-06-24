@@ -78,6 +78,7 @@
       obs-studio
       onefetch
       osu-lazer-bin
+      p7zip
       pavucontrol
       pfetch
       playerctl
