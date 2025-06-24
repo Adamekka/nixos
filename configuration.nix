@@ -10,6 +10,7 @@
 
   boot = {
     kernelModules = [ "nvidia_uvm" ];
+    kernelPackages = pkgs.linuxPackages_latest;
     loader.systemd-boot.enable = true;
   };
 
