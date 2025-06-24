@@ -185,8 +185,11 @@
       libraries = with pkgs; [ ];
     };
     steam = {
-      enable = true;
       dedicatedServer.openFirewall = true;
+      enable = true;
+      extest.enable = true;
+      gamescopeSession.enable = true;
+      protontricks.enable = true;
       remotePlay.openFirewall = true;
     };
     virt-manager.enable = true;
