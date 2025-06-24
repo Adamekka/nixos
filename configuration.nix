@@ -74,7 +74,6 @@
       # nodejs_20
       ntfs3g
       # nur.repos.nltch.spotify-adblock
-      nvtopPackages.full
       obs-studio
       onefetch
       osu-lazer-bin
