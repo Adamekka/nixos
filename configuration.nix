@@ -44,6 +44,7 @@
       fd
       ffmpeg
       fish
+      flameshot
       fzf
       gcc
       gh
@@ -231,6 +232,7 @@
     xserver = {
       enable = true;
       videoDrivers = [ "nvidia" ];
+      windowManager.awesome.enable = true;
       xkb.layout = "us";
     };
   };
