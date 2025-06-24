@@ -38,6 +38,7 @@
       # davinci-resolve
       discord
       du-dust
+      etterna
       # eww
       eza
       fd
