@@ -48,7 +48,7 @@
       fzf
       gcc
       gh
-      gimp
+      # gimp
       git
       git-lfs
       github-desktop
@@ -61,7 +61,7 @@
       kdePackages.xwaylandvideobridge
       killall
       # libnotify
-      libreoffice
+      # libreoffice
       lutris
       mako
       # mangohud
@@ -82,7 +82,7 @@
       pavucontrol
       pfetch
       playerctl
-      prismlauncher
+      # prismlauncher
       protonup-qt
       python3Full
       qbittorrent
@@ -104,8 +104,9 @@
       (pkgs.waybar.overrideAttrs (oldAttrs: {
         mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ];
       }))
+      # webcord
       wget
-      wine-staging
+      # wine-staging
       xfce.thunar
       # zellij
       zip
@@ -194,7 +195,7 @@
       protontricks.enable = true;
       remotePlay.openFirewall = true;
     };
-    virt-manager.enable = true;
+    # virt-manager.enable = true;
   };
 
   security = {
@@ -214,10 +215,10 @@
     # flatpak.enable = true;
     gnome.gnome-keyring.enable = true;
     libinput.enable = true;
-    openssh = {
-      enable = true;
-      settings.PasswordAuthentication = true;
-    };
+    # openssh = {
+    #   enable = true;
+    #   settings.PasswordAuthentication = true;
+    # };
     pipewire = {
       alsa = {
         enable = true;
@@ -275,10 +276,10 @@
     shell = pkgs.fish;
   };
 
-  virtualisation = {
-    docker.enable = true;
-    libvirtd.enable = true;
-  };
+  # virtualisation = {
+  #   docker.enable = true;
+  #   libvirtd.enable = true;
+  # };
 
   xdg.portal = {
     enable = true;
