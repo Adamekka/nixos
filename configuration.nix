@@ -129,7 +129,16 @@
   };
 
   hardware = {
-    bluetooth.enable = true;
+    bluetooth = {
+      enable = true;
+      package = pkgs.bluez.overrideAttrs (old: {
+        configureFlags = old.configureFlags ++ [
+          "--enable-sixaxis"
+        ];
+      });
+      powerOnBoot = true;
+      input.General.ClassicBondedOnly = false;
+    };
     graphics = {
       enable = true;
       enable32Bit = true;
