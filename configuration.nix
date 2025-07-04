@@ -36,7 +36,7 @@
       # cmake
       cmatrix
       # davinci-resolve
-      discord
+      # discord
       du-dust
       etterna
       # eww
@@ -97,6 +97,7 @@
       telegram-desktop
       tldr
       unzip
+      vesktop
       # vim
       vivaldi
       # vlc
