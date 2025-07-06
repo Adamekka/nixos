@@ -108,7 +108,6 @@
       # webcord
       wget
       # wine-staging
-      xfce.thunar
       # zellij
       zip
       zulu8
@@ -204,6 +203,10 @@
       gamescopeSession.enable = true;
       protontricks.enable = true;
       remotePlay.openFirewall = true;
+    };
+    thunar = {
+      enable = true;
+      plugins = with pkgs; [ ];
     };
     # virt-manager.enable = true;
   };
