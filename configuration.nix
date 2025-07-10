@@ -195,7 +195,7 @@
     nh = {
       clean = {
         enable = true;
-        extraArgs = "--keep-since 14d --keep 15";
+        extraArgs = "--keep-since 3d --keep 10";
       };
       enable = true;
       flake = "/etc/nixos";
