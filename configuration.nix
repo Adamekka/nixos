@@ -46,6 +46,7 @@
       etterna
       # eww
       eza
+      fastfetch
       fd
       ffmpeg
       fish
@@ -81,7 +82,7 @@
       ntfs3g
       # nur.repos.nltch.spotify-adblock
       obs-studio
-      onefetch
+      # onefetch
       osu-lazer-bin
       p7zip
       pavucontrol
