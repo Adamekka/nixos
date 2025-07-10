@@ -127,8 +127,9 @@
       noto-fonts-emoji
       noto-fonts-extra
       ubuntu_font_family
-      pkgs.nerd-fonts._0xproto
-      pkgs.nerd-fonts.droid-sans-mono
+      nerd-fonts._0xproto
+      nerd-fonts.droid-sans-mono
+      nerd-fonts.ubuntu-mono
     ];
   };
 
@@ -223,6 +224,7 @@
 
   services = {
     accounts-daemon.enable = true;
+    blueman.enable = true;
     dbus.enable = true;
     displayManager = {
       sessionPackages = with pkgs; [
@@ -248,7 +250,7 @@
     };
     printing.enable = true;
     pulseaudio.support32Bit = true;
-    tailscale.enable = true;
+    # tailscale.enable = true;
     xserver = {
       enable = true;
       videoDrivers = [ "nvidia" ];
