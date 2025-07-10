@@ -64,6 +64,7 @@
       # handbrake
       heroic
       # htop-vim
+      hyprpaper
       kdePackages.xwaylandvideobridge
       killall
       # libnotify
