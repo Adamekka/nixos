@@ -23,6 +23,11 @@ name = "mako"
 path = "~/.config/mako"
 git_path = "https://github.com/Adamekka/mako.git"
 
+[mpv]
+name = "mpv"
+path = "~/.config/mpv"
+git_path = "https://github.com/Adamekka/mpv.git"
+
 [picom]
 name = "picom"
 path = "~/.config/picom"
