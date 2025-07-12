@@ -103,7 +103,7 @@
       vivaldi
       # vlc
       vscode-fhs
-      (pkgs.waybar.overrideAttrs (oldAttrs: {
+      (waybar.overrideAttrs (oldAttrs: {
         mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ];
       }))
       # webcord
@@ -159,8 +159,8 @@
   };
 
   nix.settings.experimental-features = [
-    "nix-command"
     "flakes"
+    "nix-command"
   ];
 
   nixpkgs.config = {
