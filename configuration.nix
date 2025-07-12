@@ -11,11 +11,6 @@
   boot = {
     kernelModules = [ "nvidia_uvm" ];
     kernelPackages = pkgs.linuxPackages_latest;
-    kernelPatches = [{
-      features.rust = true;
-      name = "Rust Support";
-      patch = null;
-    }];
     loader.systemd-boot.enable = true;
   };
 
