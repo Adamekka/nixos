@@ -47,7 +47,6 @@
       fish
       flameshot
       fzf
-      gcc
       gh
       # gimp
       git
@@ -57,7 +56,7 @@
       gparted
       # grim
       # handbrake
-      heroic
+      # heroic
       # htop-vim
       hyprpaper
       kdePackages.xwaylandvideobridge
@@ -112,7 +111,6 @@
       # wine-staging
       # zellij
       zip
-      zulu8
     ];
   };
 
