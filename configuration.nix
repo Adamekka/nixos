@@ -188,7 +188,7 @@
     nh = {
       clean = {
         enable = true;
-        extraArgs = "--keep-since 3d --keep 10";
+        extraArgs = "--keep-since 7d --keep 20";
       };
       enable = true;
       flake = "/etc/nixos";
