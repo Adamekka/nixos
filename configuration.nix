@@ -14,6 +14,8 @@
     loader.systemd-boot.enable = true;
   };
 
+  documentation.nixos.enable = false;
+
   environment = {
     binsh = "${pkgs.dash}/bin/dash";
     sessionVariables = {
