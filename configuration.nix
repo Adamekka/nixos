@@ -28,7 +28,6 @@
       asmfmt
       bacon
       # bash
-      bat
       btop
       # cargo-outdated
       cava
@@ -46,13 +45,10 @@
       fastfetch
       fd
       ffmpeg
-      fish
       flameshot
       fzf
       gh
       # gimp
-      git
-      git-lfs
       github-desktop
       gnumake
       gparted
@@ -71,20 +67,17 @@
       mpv
       nasm
       neofetch
-      neovim
       nethogs
       # ninja
       nixpkgs-fmt
       # nodejs_20
       ntfs3g
       # nur.repos.nltch.spotify-adblock
-      obs-studio
       # onefetch
       osu-lazer-bin
       p7zip
       pavucontrol
       pfetch
-      playerctl
       # prismlauncher
       protonup-qt
       python3Full
@@ -185,11 +178,21 @@
 
   programs = {
     adb.enable = true;
+    bat.enable = true;
     fish.enable = true;
+    git = {
+      enable = true;
+      lfs.enable = true;
+    };
     hyprland = {
       enable = true;
       withUWSM = true;
       xwayland.enable = true;
+    };
+    neovim = {
+      enable = true;
+      viAlias = true;
+      vimAlias = true;
     };
     nh = {
       clean = {
@@ -203,6 +206,7 @@
       enable = true;
       libraries = with pkgs; [ ];
     };
+    obs-studio.enable = true;
     steam = {
       dedicatedServer.openFirewall = true;
       enable = true;
@@ -249,6 +253,7 @@
       jack.enable = true;
       pulse.enable = true;
     };
+    playerctld.enable = true;
     printing.enable = true;
     pulseaudio.support32Bit = true;
     # tailscale.enable = true;
