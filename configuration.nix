@@ -166,6 +166,7 @@
       "flakes"
       "nix-command"
     ];
+    warn-dirty = false;
   };
 
   nixpkgs.config = {
