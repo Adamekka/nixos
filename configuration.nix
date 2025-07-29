@@ -14,6 +14,14 @@
     loader.systemd-boot.enable = true;
   };
 
+  console = {
+    font = "ter-118b";
+    packages = [
+      pkgs.terminus_font
+    ];
+    useXkbConfig = true;
+  };
+
   documentation.nixos.enable = false;
 
   environment = {
