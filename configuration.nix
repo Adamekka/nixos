@@ -209,6 +209,7 @@
       ];
     };
     fish.enable = true;
+    gamemode.enable = true;
     git = {
       enable = true;
       lfs.enable = true;
