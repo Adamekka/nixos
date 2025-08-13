@@ -187,6 +187,27 @@
   programs = {
     adb.enable = true;
     bat.enable = true;
+    dconf = {
+      enable = true;
+      profiles.user.databases = [
+        {
+          lockAll = true;
+          settings = {
+            "org/gnome/desktop/interface" = {
+              accent-color = "teal";
+              color-scheme = "prefer-dark";
+            };
+            "org/gnome/mutter" = {
+              experimental-features = [
+                "scale-monitor-framebuffer"
+                "variable-refresh-rate"
+                "xwayland-native-scaling"
+              ];
+            };
+          };
+        }
+      ];
+    };
     fish.enable = true;
     git = {
       enable = true;
