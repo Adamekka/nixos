@@ -278,7 +278,10 @@
       sddm.enable = true;
     };
     # flatpak.enable = true;
+    fstrim.enable = true;
+    fwupd.enable = true;
     gnome.gnome-keyring.enable = true;
+    irqbalance.enable = true;
     libinput.enable = true;
     # openssh = {
     #   enable = true;
@@ -296,6 +299,7 @@
     playerctld.enable = true;
     printing.enable = true;
     pulseaudio.support32Bit = true;
+    scx.enable = true;
     # tailscale.enable = true;
     xserver = {
       enable = true;
