@@ -37,8 +37,8 @@
     systemPackages = with pkgs; [
       alacritty
       # android-studio
-      asmfmt
-      bacon
+      # asmfmt
+      # bacon
       # bash
       btop
       # cargo-outdated
@@ -57,7 +57,7 @@
       fastfetch
       fd
       ffmpeg
-      flameshot
+      # flameshot
       fzf
       gh
       # gimp
@@ -69,15 +69,15 @@
       # heroic
       # htop-vim
       hyprpaper
-      kdePackages.xwaylandvideobridge
+      # kdePackages.xwaylandvideobridge
       killall
       # libnotify
       # libreoffice
       lutris
-      mako
+      # mako
       # mangohud
       mpv
-      nasm
+      # nasm
       neofetch
       nethogs
       # ninja
@@ -89,7 +89,7 @@
       osu-lazer-bin
       p7zip
       pavucontrol
-      pfetch
+      # pfetch
       # prismlauncher
       protonup-qt
       python3Full
@@ -97,7 +97,7 @@
       ripgrep
       rofi-wayland
       # rustup
-      sccache
+      # sccache
       # slurp
       spotify
       starship
@@ -189,7 +189,7 @@
   };
 
   programs = {
-    adb.enable = true;
+    # adb.enable = true;
     bat.enable = true;
     dconf = {
       enable = true;
@@ -297,7 +297,7 @@
       pulse.enable = true;
     };
     playerctld.enable = true;
-    printing.enable = true;
+    # printing.enable = true;
     pulseaudio.support32Bit = true;
     scx.enable = true;
     # tailscale.enable = true;
