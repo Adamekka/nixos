@@ -11,7 +11,7 @@
   boot = {
     initrd.kernelModules = [ "ntsync" ];
     kernelModules = [ "nvidia_uvm" ];
-    kernelPackages = pkgs.linuxPackages_cachyos;
+    kernelPackages = pkgs.linuxPackages_cachyos-lto;
     loader = {
       efi.canTouchEfiVariables = true;
       systemd-boot.enable = true;
