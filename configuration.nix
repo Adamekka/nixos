@@ -10,7 +10,10 @@
 
   boot = {
     initrd.kernelModules = [ "ntsync" ];
-    kernelModules = [ "nvidia_uvm" ];
+    kernelModules = [
+      "nvidia_uvm"
+      "rtl8821ce"
+    ];
     kernelPackages = pkgs.linuxPackages_cachyos-lto;
     loader = {
       efi.canTouchEfiVariables = true;
