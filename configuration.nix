@@ -98,7 +98,7 @@
       python3Minimal
       qbittorrent
       ripgrep
-      rofi-wayland
+      rofi
       # rustup
       # sccache
       # slurp
