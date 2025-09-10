@@ -95,7 +95,7 @@
       # pfetch
       # prismlauncher
       protonup-qt
-      python3Full
+      python3Minimal
       qbittorrent
       ripgrep
       rofi-wayland
