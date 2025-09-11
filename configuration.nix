@@ -10,10 +10,7 @@
 
   boot = {
     initrd.kernelModules = [ "ntsync" ];
-    kernelModules = [
-      "nvidia_uvm"
-      "rtl8821ce"
-    ];
+    kernelModules = [ ];
     kernelPackages = pkgs.linuxPackages_cachyos-lto;
     loader = {
       efi.canTouchEfiVariables = true;
@@ -152,12 +149,9 @@
     graphics = {
       enable = true;
       enable32Bit = true;
-    };
-    nvidia = {
-      modesetting.enable = true;
-      nvidiaSettings = true;
-      open = true;
-      package = config.boot.kernelPackages.nvidiaPackages.stable;
+      extraPackages = with pkgs; [
+        amdvlk
+      ];
     };
   };
 
@@ -280,6 +274,7 @@
     fwupd.enable = true;
     gnome.gnome-keyring.enable = true;
     irqbalance.enable = true;
+    lact.enable = true;
     libinput.enable = true;
     # openssh = {
     #   enable = true;
@@ -301,7 +296,7 @@
     # tailscale.enable = true;
     xserver = {
       enable = true;
-      videoDrivers = [ "nvidia" ];
+      videoDrivers = [ ];
       windowManager.awesome.enable = true;
       xkb.layout = "us";
     };
