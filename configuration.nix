@@ -51,6 +51,7 @@
       # davinci-resolve
       # discord
       du-dust
+      dualsensectl
       etterna
       # eww
       eza
