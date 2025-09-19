@@ -18,6 +18,11 @@
     };
   };
 
+  chaotic.hdr = {
+    enable = true;
+    specialisation.enable = false;
+  };
+
   console = {
     font = "ter-118b";
     packages = [
