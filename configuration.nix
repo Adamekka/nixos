@@ -9,7 +9,7 @@
     ];
 
   boot = {
-    initrd.kernelModules = [ "ntsync" ];
+    initrd.kernelModules = [ "amdgpu" "ntsync" ];
     kernelModules = [ ];
     kernelPackages = pkgs.linuxPackages_cachyos-lto;
     loader = {
@@ -155,9 +155,7 @@
     graphics = {
       enable = true;
       enable32Bit = true;
-      extraPackages = with pkgs; [
-        amdvlk
-      ];
+      extraPackages = with pkgs; [ ];
     };
   };
 
@@ -302,7 +300,7 @@
     # tailscale.enable = true;
     xserver = {
       enable = true;
-      videoDrivers = [ ];
+      videoDrivers = [ "amdgpu" ];
       windowManager.awesome.enable = true;
       xkb.layout = "us";
     };
