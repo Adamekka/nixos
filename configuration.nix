@@ -82,6 +82,7 @@
       lutris
       # mako
       # mangohud
+      mission-center
       mpv
       # nasm
       neofetch
