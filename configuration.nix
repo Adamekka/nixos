@@ -43,6 +43,7 @@
       alacritty
       # android-studio
       # asmfmt
+      ani-cli
       # bacon
       # bash
       btop
