@@ -18,9 +18,16 @@
     };
   };
 
-  chaotic.hdr = {
-    enable = true;
-    specialisation.enable = false;
+  chaotic = {
+    hdr = {
+      enable = true;
+      specialisation.enable = false;
+    };
+    mesa-git = {
+      enable = true;
+      fallbackSpecialisation = false;
+      replaceBasePackage = true;
+    };
   };
 
   console = {
