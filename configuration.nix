@@ -245,7 +245,14 @@
       enable = true;
       libraries = with pkgs; [ ];
     };
-    obs-studio.enable = true;
+    obs-studio = {
+      enable = true;
+      plugins = with pkgs.obs-studio-plugins; [
+        obs-vaapi
+        obs-vkcapture
+        wlrobs
+      ];
+    };
     steam = {
       dedicatedServer.openFirewall = true;
       enable = true;
