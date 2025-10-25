@@ -38,6 +38,11 @@ name = "rofi"
 path = "~/.config/rofi"
 git_path = "https://github.com/Adamekka/rofi.git"
 
+[secrets]
+name = "secrets"
+path = "~/secrets"
+git_path = "https://github.com/Adamekka/secrets.git"
+
 [st]
 name = "st"
 path = "~/.config/st"

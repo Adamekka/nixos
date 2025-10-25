@@ -5,7 +5,7 @@
     [
       # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      ./secret.nix
+      ./synapse.nix
     ];
 
   boot = {
@@ -49,6 +49,7 @@
     systemPackages = with pkgs; [
       alacritty
       # android-studio
+      antares
       # asmfmt
       ani-cli
       # bacon
@@ -65,6 +66,7 @@
       # discord
       du-dust
       dualsensectl
+      element-desktop
       etterna
       # eww
       eza
@@ -170,7 +172,7 @@
   };
 
   networking = {
-    firewall.enable = false;
+    # firewall.enable = false;
     hostName = "nixos";
     networkmanager.enable = true;
     wireless.userControlled.enable = true;
