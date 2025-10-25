@@ -186,11 +186,7 @@
 
   nixpkgs.config = {
     allowUnfree = true;
-    permittedInsecurePackages = [
-      # "openssl-1.1.1u"
-      # "openssl-1.1.1v"
-      # "qbittorrent-4.6.4"
-    ];
+    permittedInsecurePackages = [ ];
   };
 
   programs = {
