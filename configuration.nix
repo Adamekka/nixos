@@ -262,7 +262,7 @@
       enable = true;
       plugins = with pkgs; [ ];
     };
-    # virt-manager.enable = true;
+    virt-manager.enable = true;
   };
 
   security = {
@@ -353,10 +353,10 @@
     shell = pkgs.fish;
   };
 
-  # virtualisation = {
-  #   docker.enable = true;
-  #   libvirtd.enable = true;
-  # };
+  virtualisation = {
+    # docker.enable = true;
+    libvirtd.enable = true;
+  };
 
   xdg.portal = {
     enable = true;
