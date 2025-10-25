@@ -89,7 +89,8 @@
       # libreoffice
       lutris
       # mako
-      # mangohud
+      mangohud
+      mangojuice
       mission-center
       mpv
       # nasm
