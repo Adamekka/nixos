@@ -64,7 +64,7 @@
       cmatrix
       # davinci-resolve
       # discord
-      du-dust
+      dust
       dualsensectl
       element-desktop
       etterna
@@ -142,14 +142,13 @@
   fonts = {
     packages = with pkgs; [
       font-awesome
-      noto-fonts
-      noto-fonts-cjk-sans
-      noto-fonts-emoji
-      noto-fonts-extra
-      ubuntu_font_family
       nerd-fonts._0xproto
       nerd-fonts.droid-sans-mono
       nerd-fonts.ubuntu-mono
+      noto-fonts
+      noto-fonts-cjk-sans
+      noto-fonts-color-emoji
+      ubuntu-classic
     ];
   };
 
