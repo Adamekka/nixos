@@ -25,7 +25,7 @@
     };
     mesa-git = {
       enable = true;
-      fallbackSpecialisation = false;
+      fallbackSpecialisation = true;
       replaceBasePackage = true;
     };
   };
