@@ -31,9 +31,6 @@ in
         };
         enable_registration = true;
         enable_registration_captcha = true;
-        extraConfig = ''
-          max_upload_size: "500M"
-        '';
         listeners = [
           {
             # Federation
