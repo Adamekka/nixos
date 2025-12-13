@@ -108,7 +108,7 @@
       p7zip
       pavucontrol
       # pfetch
-      # prismlauncher
+      prismlauncher
       protonup-qt
       python3Minimal
       qbittorrent
