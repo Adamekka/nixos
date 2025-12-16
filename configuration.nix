@@ -261,6 +261,10 @@
       dedicatedServer.openFirewall = true;
       enable = true;
       extest.enable = true;
+      extraCompatPackages = with pkgs; [
+        nur.repos.mio.proton-cachyos_x86_64_v4
+        proton-ge-bin
+      ];
       gamescopeSession.enable = true;
       protontricks.enable = true;
       remotePlay.openFirewall = true;
