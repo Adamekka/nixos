@@ -43,7 +43,13 @@
   environment = {
     binsh = "${pkgs.dash}/bin/dash";
     sessionVariables = {
+      ENABLE_HDR_WSI = "1";
       NIXOS_OZONE_WL = "1";
+      PROTON_ENABLE_HDR = "1";
+      PROTON_ENABLE_WAYLAND = "1";
+      PROTON_FSR4_UPGRADE = "1";
+      PROTON_USE_NTSYNC = "1";
+      PROTON_XESS_UPGRADE = "1";
       WLR_NO_HARDWARE_CURSORS = "1";
     };
     systemPackages = with pkgs; [
