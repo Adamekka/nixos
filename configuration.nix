@@ -180,7 +180,7 @@
     # firewall.enable = false;
     hostName = "nixos";
     networkmanager.enable = true;
-    wireless.userControlled.enable = true;
+    wireless.userControlled = true;
   };
 
   nix.settings = {
