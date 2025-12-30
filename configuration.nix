@@ -90,6 +90,7 @@
       killall
       # libnotify
       # libreoffice
+      lsfg-vk-ui
       # lutris
       # mako
       mangohud
