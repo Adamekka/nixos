@@ -55,7 +55,7 @@
     systemPackages = with pkgs; [
       alacritty
       # android-studio
-      antares
+      # antares
       # asmfmt
       ani-cli
       # bacon
@@ -95,7 +95,7 @@
       killall
       # libnotify
       # libreoffice
-      lutris
+      # lutris
       # mako
       mangohud
       mangojuice
