@@ -93,9 +93,10 @@ in
   networking.firewall = {
     allowedTCPPorts = [
       22 #   SSH
-      8448 # Matrix federation
       80 #   HTTP
       443 #  HTTPS
+      8188 # ComfyUI
+      8448 # Matrix federation
     ];
     enable = true;
   };
