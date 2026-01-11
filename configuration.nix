@@ -57,7 +57,9 @@
       # bash
       btop
       # cargo-outdated
-      cava
+      (cava.override {
+        withSDL2 = true;
+      })
       cbonsai
       clang
       clang-tools
