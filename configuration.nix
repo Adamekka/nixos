@@ -131,6 +131,7 @@
       sway-contrib.grimshot
       telegram-desktop
       tldr
+      tokei
       unzip
       vesktop
       # vim
