@@ -295,7 +295,7 @@
       ];
       sddm.enable = true;
     };
-    # flatpak.enable = true;
+    flatpak.enable = true;
     fstrim.enable = true;
     fwupd.enable = true;
     gnome.gnome-keyring.enable = true;
