@@ -112,7 +112,7 @@
       # nodejs_20
       ntfs3g
       # nur.repos.nltch.spotify-adblock
-      # onefetch
+      onefetch
       osu-lazer-bin
       p7zip
       pavucontrol
