@@ -9,7 +9,10 @@
     ];
 
   boot = {
-    initrd.kernelModules = [ "amdgpu" "ntsync" ];
+    initrd.kernelModules = [
+      "amdgpu"
+      "ntsync"
+    ];
     kernelModules = [ ];
     kernelPackages = pkgs.linuxPackages_cachyos-lto;
     loader = {
