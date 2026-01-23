@@ -15,6 +15,13 @@
     ];
     kernelModules = [ ];
     kernelPackages = pkgs.linuxPackages_cachyos-lto;
+    kernelParams = [
+      "amd_pstate=active"
+      "preempt=full"
+      "transparent_hugepage=always"
+      "usbcore.autosuspend=-1"
+      "xhci_hcd.quirks=0x2000"
+    ];
     loader = {
       efi.canTouchEfiVariables = true;
       systemd-boot.enable = true;
