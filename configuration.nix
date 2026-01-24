@@ -154,6 +154,7 @@
       # webcord
       wget
       # wine-staging
+      witr
       # zellij
       zip
     ];
