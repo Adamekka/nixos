@@ -12,6 +12,7 @@ in
     acceptTerms = true;
     defaults.email = "${email}";
   };
+
   services = {
     cloudflared = {
       enable = true;

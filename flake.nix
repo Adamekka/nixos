@@ -3,8 +3,8 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable-small";
 
     chaotic = {
-      url = "github:lonerOrz/nyx-loner/main";
       inputs.nixpkgs.follows = "nixpkgs";
+      url = "github:lonerOrz/nyx-loner/main";
     };
 
     nur = {
