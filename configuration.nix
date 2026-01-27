@@ -9,9 +9,13 @@
     ];
 
   boot = {
+    extraModulePackages = with config.boot.kernelPackages; [
+      zenpower
+    ];
     initrd.kernelModules = [
       "amdgpu"
       "ntsync"
+      "zenpower"
     ];
     kernelModules = [ ];
     kernelPackages = pkgs.linuxPackages_cachyos-lto;
