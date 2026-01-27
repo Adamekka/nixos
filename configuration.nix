@@ -53,6 +53,8 @@
   environment = {
     binsh = "${pkgs.dash}/bin/dash";
     sessionVariables = {
+      __GL_GSYNC_ALLOWED = "1";
+      __GL_VRR_ALLOWED = "1";
       ENABLE_HDR_WSI = "1";
       NIXOS_OZONE_WL = "1";
       PROTON_ENABLE_HDR = "1";
@@ -60,7 +62,8 @@
       PROTON_FSR4_UPGRADE = "1";
       PROTON_USE_NTSYNC = "1";
       PROTON_XESS_UPGRADE = "1";
-      WLR_NO_HARDWARE_CURSORS = "1";
+      RADV_PERFTEST = "rt,nggc";
+      WLR_DRM_NO_ATOMIC = "0";
     };
     systemPackages = with pkgs; [
       alacritty
