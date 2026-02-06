@@ -89,8 +89,8 @@
         withSDL2 = true;
       })
       cbonsai
-      clang
-      clang-tools
+      # clang
+      # clang-tools
       # cmake
       cmatrix
       # davinci-resolve
@@ -109,7 +109,7 @@
       gh
       # gimp
       github-desktop
-      gnumake
+      # gnumake
       gparted
       # grim
       # handbrake
@@ -129,7 +129,7 @@
       mission-center
       mpv
       # nasm
-      neofetch
+      # neofetch
       nethogs
       # ninja
       nixpkgs-fmt
@@ -168,7 +168,7 @@
       # webcord
       wget
       # wine-staging
-      witr
+      # witr
       # zellij
       zip
     ];
