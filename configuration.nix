@@ -271,6 +271,7 @@
       withUWSM = true;
       xwayland.enable = true;
     };
+    nano.enable = false;
     neovim = {
       enable = true;
       viAlias = true;
