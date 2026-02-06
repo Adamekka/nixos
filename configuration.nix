@@ -116,6 +116,7 @@
       # heroic
       # htop-vim
       hyprpaper
+      jq
       # kdePackages.xwaylandvideobridge
       killall
       # libnotify
