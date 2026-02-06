@@ -82,6 +82,7 @@
       ani-cli
       # bacon
       # bash
+      bc
       btop
       # cargo-outdated
       (cava.override {
