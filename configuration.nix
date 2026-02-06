@@ -206,6 +206,7 @@
   };
 
   networking = {
+    extraHosts = "0.0.0.0 paradise-s1.battleye.com\n0.0.0.0 test-s1.battleye.com\n0.0.0.0 paradiseenhanced-s1.battleye.com"; # GTA V Multiplayer fix
     firewall = {
       allowedTCPPorts = [
         22 #   SSH
