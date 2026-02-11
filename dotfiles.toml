@@ -13,6 +13,11 @@ name = "fish"
 path = "~/.config/fish"
 git_path = "https://github.com/Adamekka/fish"
 
+[helix]
+name = "helix"
+path = "~/.config/helix"
+git_path = "https://github.com/Adamekka/helix"
+
 [hypr]
 name = "hypr"
 path = "~/.config/hypr"
