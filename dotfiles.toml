@@ -1,64 +1,64 @@
 [alacritty]
 name = "alacritty"
 path = "~/.config/alacritty"
-git_path = "https://github.com/Adamekka/alacritty.git"
+git_path = "https://github.com/Adamekka/alacritty"
 
 [dwm]
 name = "dwm"
 path = "~/.config/dwm"
-git_path = "https://github.com/Adamekka/dwm.git"
+git_path = "https://github.com/Adamekka/dwm"
 
 [fish]
 name = "fish"
 path = "~/.config/fish"
-git_path = "https://github.com/Adamekka/fish.git"
+git_path = "https://github.com/Adamekka/fish"
 
 [hypr]
 name = "hypr"
 path = "~/.config/hypr"
-git_path = "https://github.com/Adamekka/hypr.git"
+git_path = "https://github.com/Adamekka/hypr"
 
 [mako]
 name = "mako"
 path = "~/.config/mako"
-git_path = "https://github.com/Adamekka/mako.git"
+git_path = "https://github.com/Adamekka/mako"
 
 [mpv]
 name = "mpv"
 path = "~/.config/mpv"
-git_path = "https://github.com/Adamekka/mpv.git"
+git_path = "https://github.com/Adamekka/mpv"
 
 [picom]
 name = "picom"
 path = "~/.config/picom"
-git_path = "https://github.com/Adamekka/picom.git"
+git_path = "https://github.com/Adamekka/picom"
 
 [rofi]
 name = "rofi"
 path = "~/.config/rofi"
-git_path = "https://github.com/Adamekka/rofi.git"
+git_path = "https://github.com/Adamekka/rofi"
 
 [secrets]
 name = "secrets"
 path = "~/secrets"
-git_path = "https://github.com/Adamekka/secrets.git"
+git_path = "https://github.com/Adamekka/secrets"
 
 [st]
 name = "st"
 path = "~/.config/st"
-git_path = "https://github.com/Adamekka/st.git"
+git_path = "https://github.com/Adamekka/st"
 
 [waybar]
 name = "waybar"
 path = "~/.config/waybar"
-git_path = "https://github.com/Adamekka/waybar.git"
+git_path = "https://github.com/Adamekka/waybar"
 
 [xmobar]
 name = "xmobar"
 path = "~/.config/xmobar"
-git_path = "https://github.com/Adamekka/xmobar.git"
+git_path = "https://github.com/Adamekka/xmobar"
 
 [xmonad]
 name = "xmonad"
 path = "~/.config/xmonad"
-git_path = "https://github.com/Adamekka/xmonad.git"
+git_path = "https://github.com/Adamekka/xmonad"
