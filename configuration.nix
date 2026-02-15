@@ -42,11 +42,11 @@
       enable = true;
       specialisation.enable = false;
     };
-    mesa-git = {
-      enable = true;
-      fallbackSpecialisation = true;
-      replaceBasePackage = true;
-    };
+    # mesa-git = {
+    #   enable = true;
+    #   fallbackSpecialisation = true;
+    #   replaceBasePackage = true;
+    # };
   };
 
   console = {
