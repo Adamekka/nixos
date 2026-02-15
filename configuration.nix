@@ -155,6 +155,7 @@
       # slurp
       spotify
       starship
+      stoat-desktop
       sway-contrib.grimshot
       telegram-desktop
       tldr
