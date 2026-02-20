@@ -381,6 +381,7 @@
   };
 
   systemd = {
+    coredump.enable = false;
     user.services.polkit-gnome-authentication-agent-1 = {
       after = [ "graphical-session.target" ];
       description = "polkit-gnome-authentication-agent-1";
