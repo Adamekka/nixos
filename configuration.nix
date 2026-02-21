@@ -58,7 +58,7 @@
   };
 
   documentation = {
-    man.generateCaches = false;
+    man.cache.enable = false;
     nixos.enable = false;
   };
 
