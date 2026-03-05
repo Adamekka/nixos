@@ -67,7 +67,11 @@
     sessionVariables = {
       __GL_GSYNC_ALLOWED = "1";
       __GL_VRR_ALLOWED = "1";
+      AMD_VULKAN_ICD = "RADV";
       ENABLE_HDR_WSI = "1";
+      GAMEMODERUN = "1";
+      MESA_GLSL_CACHE_MAX_SIZE = "16G";
+      MESA_SHADER_CACHE_MAX_SIZE = "16G";
       NIXOS_OZONE_WL = "1";
       PROTON_ENABLE_HDR = "1";
       PROTON_ENABLE_WAYLAND = "1";
@@ -75,6 +79,7 @@
       PROTON_USE_NTSYNC = "1";
       PROTON_XESS_UPGRADE = "1";
       RADV_PERFTEST = "rt,nggc";
+      VKD3D_CONFIG = "dxr,dxr11";
       WLR_DRM_NO_ATOMIC = "0";
     };
     systemPackages = with pkgs; [
