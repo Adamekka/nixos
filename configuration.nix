@@ -159,6 +159,7 @@
       rofi
       # rustup
       # sccache
+      signal-desktop
       # slurp
       spotify
       starship
