@@ -146,6 +146,7 @@
       ntfs3g
       # nur.repos.nltch.spotify-adblock
       onefetch
+      opencode
       osu-lazer-bin
       p7zip
       pavucontrol
