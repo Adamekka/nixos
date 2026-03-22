@@ -174,9 +174,6 @@
       vivaldi
       # vlc
       vscode-fhs
-      (waybar.overrideAttrs (oldAttrs: {
-        mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ];
-      }))
       # webcord
       wget
       # wine-staging
@@ -326,6 +323,7 @@
       plugins = with pkgs; [ ];
     };
     # virt-manager.enable = true;
+    waybar.enable = true;
   };
 
   security = {
