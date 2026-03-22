@@ -129,6 +129,7 @@
       killall
       # libnotify
       # libreoffice
+      lmstudio
       lsfg-vk-ui
       # lutris
       # mako
