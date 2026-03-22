@@ -17,6 +17,7 @@
       "ntsync"
       "zenpower"
     ];
+    kernel.sysctl."kernel.core_pattern" = "/dev/null";
     kernelModules = [ ];
     kernelPackages = pkgs.linuxPackages_cachyos-lto;
     kernelParams = [
@@ -327,6 +328,20 @@
   };
 
   security = {
+    pam.loginLimits = [
+      {
+        domain = "*";
+        type = "soft";
+        item = "core";
+        value = "0";
+      }
+      {
+        domain = "*";
+        type = "hard";
+        item = "core";
+        value = "0";
+      }
+    ];
     polkit.enable = true;
     rtkit.enable = true;
     sudo.enable = false;
