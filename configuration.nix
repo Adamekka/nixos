@@ -107,7 +107,7 @@
       # discord
       dust
       dualsensectl
-      element-desktop
+      # element-desktop
       etterna
       # eww
       eza
@@ -131,12 +131,12 @@
       killall
       # libnotify
       # libreoffice
-      lmstudio
-      lsfg-vk-ui
+      # lmstudio
+      # lsfg-vk-ui
       # lutris
       # mako
-      mangohud
-      mangojuice
+      # mangohud
+      # mangojuice
       mission-center
       mpv
       # nasm
@@ -165,7 +165,7 @@
       # slurp
       spotify
       starship
-      stoat-desktop
+      # stoat-desktop
       sway-contrib.grimshot
       telegram-desktop
       tldr
