@@ -10,16 +10,16 @@
 
   boot = {
     extraModulePackages = with config.boot.kernelPackages; [
-      zenpower
+      # zenpower
     ];
     initrd.kernelModules = [
       "amdgpu"
       "ntsync"
-      "zenpower"
+      # "zenpower"
     ];
     kernel.sysctl."kernel.core_pattern" = "/dev/null";
     kernelModules = [ ];
-    kernelPackages = pkgs.linuxPackages_cachyos-lto;
+    kernelPackages = pkgs.cachyosKernels.linuxPackages-cachyos-latest-lto-zen4;
     kernelParams = [
       "amd_pstate=active"
       "amdgpu.allm_mode=1"
@@ -36,18 +36,6 @@
       efi.canTouchEfiVariables = true;
       systemd-boot.enable = true;
     };
-  };
-
-  chaotic = {
-    hdr = {
-      enable = true;
-      specialisation.enable = false;
-    };
-    # mesa-git = {
-    #   enable = true;
-    #   fallbackSpecialisation = true;
-    #   replaceBasePackage = true;
-    # };
   };
 
   console = {
@@ -238,6 +226,14 @@
     experimental-features = [
       "flakes"
       "nix-command"
+    ];
+    substituters = [
+      "https://attic.xuyh0120.win/lantian"
+      "https://cache.garnix.io"
+    ];
+    trusted-public-keys = [
+      "lantian:EeAUQ+W+6r7EtwnmYjeVwx5kOGEBpjlBfPlzGlTNvHc="
+      "cache.garnix.io:CTFPyKSLcx5RMJKfLo5EEPUObbA78b0YQ2DTCJXqr9g="
     ];
     warn-dirty = false;
   };
