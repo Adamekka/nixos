@@ -100,7 +100,7 @@
       cbonsai
       # clang
       # clang-tools
-      claude-code
+      # claude-code
       # cmake
       cmatrix
       # davinci-resolve
