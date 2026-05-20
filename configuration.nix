@@ -22,15 +22,12 @@
     kernelPackages = pkgs.cachyosKernels.linuxPackages-cachyos-latest-lto-zen4;
     kernelParams = [
       "amd_pstate=active"
-      "amdgpu.allm_mode=1"
-      "amdgpu.dcfeaturemask=0x2"
-      "amdgpu.hdmi_vrr_desktop_mode=1"
       "amdgpu.sg_display=0"
       "mitigations=off"
       "nowatchdog"
       "preempt=full"
-      "split_lock_detect=off"
-      "transparent_hugepage=always"
+      "transparent_hugepage=madvise"
+      "iommu=pt"
     ];
     loader = {
       efi.canTouchEfiVariables = true;
