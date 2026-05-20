@@ -436,4 +436,10 @@
       xdg-desktop-portal-hyprland
     ];
   };
+
+  zramSwap = {
+    algorithm = "lz4"; # lz4 is fastest; zstd has better compression ratio, but is a bit slower
+    enable = true;
+    memoryPercent = 200;
+  };
 }
