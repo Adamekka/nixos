@@ -110,6 +110,7 @@
       fzf
       gh
       # gimp
+      gnome-themes-extra
       github-desktop
       # gnumake
       gparted
