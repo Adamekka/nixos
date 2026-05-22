@@ -50,6 +50,18 @@
 
   environment = {
     binsh = "${pkgs.dash}/bin/dash";
+    etc = {
+      "xdg/gtk-3.0/settings.ini".text = ''
+        [Settings]
+        gtk-application-prefer-dark-theme=1
+        gtk-theme-name=Adwaita-dark
+      '';
+      "xdg/gtk-4.0/settings.ini".text = ''
+        [Settings]
+        gtk-application-prefer-dark-theme=1
+        gtk-theme-name=Adwaita-dark
+      '';
+    };
     sessionVariables = {
       __GL_GSYNC_ALLOWED = "1";
       __GL_VRR_ALLOWED = "1";
@@ -247,6 +259,8 @@
             "org/gnome/desktop/interface" = {
               accent-color = "teal";
               color-scheme = "prefer-dark";
+              gtk-application-prefer-dark-theme = true;
+              gtk-theme = "Adwaita-dark";
             };
             "org/gnome/mutter" = {
               experimental-features = [
