@@ -80,7 +80,7 @@
       # android-studio
       # antares
       # asmfmt
-      ani-cli
+      # ani-cli
       # bacon
       # bash
       bc
