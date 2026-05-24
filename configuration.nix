@@ -78,9 +78,9 @@
     systemPackages = with pkgs; [
       alacritty
       # android-studio
+      # ani-cli
       # antares
       # asmfmt
-      # ani-cli
       # bacon
       # bash
       bc
