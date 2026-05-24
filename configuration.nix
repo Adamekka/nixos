@@ -77,6 +77,7 @@
     };
     systemPackages = with pkgs; [
       alacritty
+      amdgpu_top
       # android-studio
       # ani-cli
       # antares
