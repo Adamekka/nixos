@@ -127,7 +127,8 @@
       # libnotify
       # libreoffice
       # lmstudio
-      # lsfg-vk-ui
+      lsfg-vk
+      lsfg-vk-ui
       # lutris
       # mako
       # mangohud
