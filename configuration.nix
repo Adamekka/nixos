@@ -127,8 +127,6 @@
       # libnotify
       # libreoffice
       # lmstudio
-      lsfg-vk
-      lsfg-vk-ui
       # lutris
       # mako
       # mangohud
@@ -142,6 +140,7 @@
       nixpkgs-fmt
       # nodejs_20
       ntfs3g
+      nur.repos.Adamekka.lsfg-vk-git
       # nur.repos.nltch.spotify-adblock
       onefetch
       opencode
