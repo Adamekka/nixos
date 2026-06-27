@@ -319,7 +319,7 @@
       enable = true;
       extest.enable = true;
       extraCompatPackages = with pkgs; [
-        nur.repos.mio.proton-cachyos_x86_64_v4
+        nur.repos.mio.proton-cachyos_x86_64_v3 # v4 was removed
         proton-ge-bin
       ];
       gamescopeSession.enable = true;
