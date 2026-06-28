@@ -113,6 +113,7 @@
       gh
       # gimp
       github-desktop
+      glab
       gnome-themes-extra
       # gnumake
       gparted
