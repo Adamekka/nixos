@@ -112,8 +112,8 @@
       fzf
       gh
       # gimp
-      gnome-themes-extra
       github-desktop
+      gnome-themes-extra
       # gnumake
       gparted
       # grim
