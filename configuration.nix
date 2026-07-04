@@ -143,6 +143,7 @@
       nixpkgs-fmt
       # nodejs_20
       ntfs3g
+      nur.repos.Adamekka.gdstash
       # nur.repos.nltch.spotify-adblock
       onefetch
       opencode
