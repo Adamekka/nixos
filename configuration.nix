@@ -224,7 +224,7 @@
         8188 # ComfyUI
         8448 # Matrix federation
       ];
-      enable = true;
+      enable = false;
     };
     hostName = "nixos";
     networkmanager.enable = true;
