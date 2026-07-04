@@ -402,7 +402,7 @@
     # printing.enable = true;
     pulseaudio.support32Bit = true;
     scx.enable = true;
-    # tailscale.enable = true;
+    tailscale.enable = true;
     tumbler.enable = true;
     xserver = {
       enable = true;
