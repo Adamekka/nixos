@@ -145,6 +145,7 @@
       ntfs3g
       nur.repos.Adamekka.gdstash
       nur.repos.Adamekka.lunar-tear
+      nur.repos.Adamekka.wondershaper
       # nur.repos.nltch.spotify-adblock
       onefetch
       opencode
