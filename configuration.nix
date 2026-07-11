@@ -82,6 +82,7 @@
       # android-studio
       # ani-cli
       # antares
+      apfs-fuse
       # asmfmt
       # bacon
       # bash
