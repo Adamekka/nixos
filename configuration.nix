@@ -155,7 +155,9 @@
       # nur.repos.nltch.spotify-adblock
       onefetch
       opencode
-      osu-lazer-bin
+      (osu-lazer-bin.override {
+        nativeWayland = true;
+      })
       p7zip
       pavucontrol
       # pfetch
