@@ -193,7 +193,7 @@
       # vlc
       vscode-fhs
       # webcord
-      wget
+      wget2
       # wine-staging
       # witr
       # zellij
