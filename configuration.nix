@@ -260,6 +260,7 @@
   nixpkgs.config = {
     allowUnfree = true;
     permittedInsecurePackages = [ ];
+    rocmSupport = true;
   };
 
   programs = {
