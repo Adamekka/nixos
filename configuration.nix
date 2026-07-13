@@ -182,7 +182,9 @@
       tldr
       tokei
       unzip
-      vesktop
+      (vesktop.override {
+        withMiddleClickScroll = true;
+      })
       # vim
       (vivaldi.override {
         proprietaryCodecs = true;
