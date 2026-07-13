@@ -146,7 +146,9 @@
       ntfs3g
       nur.repos.Adamekka.gdstash
       nur.repos.Adamekka.lunar-tear
-      nur.repos.Adamekka.rpcs3
+      (nur.repos.Adamekka.rpcs3-git.override {
+        enableDiscordRpc = true;
+      })
       nur.repos.Adamekka.wondershaper
       # nur.repos.nltch.spotify-adblock
       onefetch
