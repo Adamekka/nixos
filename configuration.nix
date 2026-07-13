@@ -115,6 +115,7 @@
       # gimp
       github-desktop
       glab
+      gnome-podcasts
       gnome-themes-extra
       # gnumake
       gparted
