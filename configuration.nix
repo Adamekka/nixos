@@ -163,6 +163,7 @@
       rofi
       # rustup
       # sccache
+      shadps4-qtlauncher
       signal-desktop
       # slurp
       spotify
