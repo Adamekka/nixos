@@ -178,7 +178,9 @@
       unzip
       vesktop
       # vim
-      vivaldi
+      (vivaldi.override {
+        proprietaryCodecs = true;
+      })
       # vlc
       vscode-fhs
       # webcord
