@@ -170,7 +170,9 @@
       # rustup
       # sccache
       shadps4-qtlauncher
-      signal-desktop
+      (signal-desktop.override {
+        withAppleEmojis = true;
+      })
       # slurp
       spotify
       starship
