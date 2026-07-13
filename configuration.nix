@@ -188,6 +188,7 @@
       # vim
       (vivaldi.override {
         proprietaryCodecs = true;
+        vivaldi-ffmpeg-codecs = pkgs.vivaldi-ffmpeg-codecs;
       })
       # vlc
       vscode-fhs
