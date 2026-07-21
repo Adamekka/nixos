@@ -143,7 +143,6 @@
       nethogs
       # ninja
       nixpkgs-fmt
-      nixpkgs-lint
       # nodejs_20
       ntfs3g
       nur.repos.Adamekka.gdstash
