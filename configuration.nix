@@ -128,7 +128,7 @@
       killall
       # libnotify
       # libreoffice
-      # lmstudio
+      lmstudio
       lsfg-vk
       lsfg-vk-ui
       # lutris
