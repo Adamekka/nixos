@@ -146,6 +146,7 @@
       ntfs3g
       nur.repos.Adamekka.gdstash
       nur.repos.Adamekka.github-desktop
+      nur.repos.Adamekka.linux-wallpaperengine-git
       nur.repos.Adamekka.lunar-tear
       (nur.repos.Adamekka.rpcs3-git.override {
         enableDiscordRpc = true;
