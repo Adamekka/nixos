@@ -151,6 +151,7 @@
       (nur.repos.Adamekka.rpcs3-git.override {
         enableDiscordRpc = true;
       })
+      nur.repos.Adamekka.t3code
       nur.repos.Adamekka.wondershaper
       # nur.repos.nltch.spotify-adblock
       onefetch
