@@ -10,6 +10,7 @@
 
   boot = {
     extraModulePackages = with config.boot.kernelPackages; [
+      hid-t150
       # zenpower
     ];
     initrd.kernelModules = [
@@ -18,7 +19,9 @@
       # "zenpower"
     ];
     kernel.sysctl."kernel.core_pattern" = "/dev/null";
-    kernelModules = [ ];
+    kernelModules = [
+      "hid-t150"
+    ];
     kernelPackages = pkgs.cachyosKernels.linuxPackages-cachyos-latest-lto-zen4;
     kernelParams = [
       "amd_pstate=active"
