@@ -275,7 +275,6 @@
   };
 
   programs = {
-    # adb.enable = true;
     bat.enable = true;
     dconf = {
       enable = true;
