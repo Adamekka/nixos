@@ -438,6 +438,9 @@
 
   systemd = {
     coredump.enable = false;
+    tmpfiles.rules = [
+      "L+ /bin/bash - - - - ${pkgs.bash}/bin/bash"
+    ];
     user.services.polkit-gnome-authentication-agent-1 = {
       after = [ "graphical-session.target" ];
       description = "polkit-gnome-authentication-agent-1";
