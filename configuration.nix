@@ -275,6 +275,17 @@
   };
 
   programs = {
+    alvr = {
+      enable = true;
+      openFirewall = true;
+      package = pkgs.alvr.overrideAttrs (old: {
+        postInstall = (old.postInstall or "") + ''
+          mkdir -p $out/bin/platform-tools
+          ln -s ${pkgs.android-tools}/bin/adb \
+            $out/bin/platform-tools/adb
+        '';
+      });
+    };
     bat.enable = true;
     dconf = {
       enable = true;
@@ -345,6 +356,16 @@
         proton-ge-bin
       ];
       gamescopeSession.enable = true;
+      package = pkgs.steam.override {
+        # All those libs for ALVR
+        extraLibraries = pkgs: with pkgs; [
+          libice
+          libsm
+          nspr
+          nss
+          SDL2
+        ];
+      };
       protontricks.enable = true;
       remotePlay.openFirewall = true;
     };
