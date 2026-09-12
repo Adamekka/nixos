@@ -147,6 +147,7 @@
       nixpkgs-fmt
       # nodejs_20
       ntfs3g
+      nur.repos.Adamekka.chatgpt
       nur.repos.Adamekka.gdstash
       nur.repos.Adamekka.github-desktop
       nur.repos.Adamekka.linux-wallpaperengine-git
