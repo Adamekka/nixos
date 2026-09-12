@@ -185,6 +185,7 @@
       telegram-desktop
       tldr
       tokei
+      unrar
       unzip
       (vesktop.override {
         withMiddleClickScroll = true;
