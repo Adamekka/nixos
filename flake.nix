@@ -15,22 +15,30 @@
     };
   };
 
-  outputs = { self, nixpkgs, /* chaotic, */ nix-cachyos-kernel, nur }: {
-    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-      modules = [
-        ./configuration.nix
+  outputs =
+    {
+      self,
+      nixpkgs,
+      # chaotic,
+      nix-cachyos-kernel,
+      nur,
+    }:
+    {
+      nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+        modules = [
+          ./configuration.nix
 
-        # MARK: Modules
+          # MARK: Modules
 
-        # chaotic.nixosModules.default
-        nur.modules.nixos.default
+          # chaotic.nixosModules.default
+          nur.modules.nixos.default
 
-        # MARK: Overlays
+          # MARK: Overlays
 
-        {
-          nixpkgs.overlays = [ nix-cachyos-kernel.overlays.pinned ];
-        }
-      ];
+          {
+            nixpkgs.overlays = [ nix-cachyos-kernel.overlays.pinned ];
+          }
+        ];
+      };
     };
-  };
 }

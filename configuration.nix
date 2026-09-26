@@ -1,12 +1,11 @@
 { config, pkgs, ... }:
 
 {
-  imports =
-    [
-      # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-      # ./synapse.nix
-    ];
+  imports = [
+    # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+    # ./synapse.nix
+  ];
 
   boot = {
     extraModulePackages = with config.boot.kernelPackages; [
@@ -241,9 +240,9 @@
     extraHosts = "0.0.0.0 paradise-s1.battleye.com\n0.0.0.0 test-s1.battleye.com\n0.0.0.0 paradiseenhanced-s1.battleye.com"; # GTA V Multiplayer fix
     firewall = {
       allowedTCPPorts = [
-        22 #   SSH
-        80 #   HTTP
-        443 #  HTTPS
+        22 # SSH
+        80 # HTTP
+        443 # HTTPS
         8188 # ComfyUI
         8448 # Matrix federation
       ];
@@ -359,13 +358,14 @@
       gamescopeSession.enable = true;
       package = pkgs.steam.override {
         # All those libs for ALVR
-        extraLibraries = pkgs: with pkgs; [
-          libice
-          libsm
-          nspr
-          nss
-          SDL2
-        ];
+        extraLibraries =
+          pkgs: with pkgs; [
+            libice
+            libsm
+            nspr
+            nss
+            SDL2
+          ];
       };
       protontricks.enable = true;
       remotePlay.openFirewall = true;

@@ -38,8 +38,14 @@ in
             bind_addresses = [ ];
             port = 8448;
             resources = [
-              { compress = true; names = [ "client" ]; }
-              { compress = false; names = [ "federation" ]; }
+              {
+                compress = true;
+                names = [ "client" ];
+              }
+              {
+                compress = false;
+                names = [ "federation" ];
+              }
             ];
             tls = true;
             type = "http";
@@ -52,7 +58,10 @@ in
             ];
             port = 8008;
             resources = [
-              { compress = true; names = [ "client" ]; }
+              {
+                compress = true;
+                names = [ "client" ];
+              }
             ];
             tls = false;
             type = "http";
