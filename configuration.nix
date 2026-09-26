@@ -144,7 +144,7 @@
       # neofetch
       nethogs
       # ninja
-      nixpkgs-fmt
+      nixfmt
       # nodejs_20
       ntfs3g
       nur.repos.Adamekka.chatgpt
