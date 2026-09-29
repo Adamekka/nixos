@@ -146,6 +146,7 @@
       nixfmt
       # nodejs_20
       ntfs3g
+      nur.repos.Adamekka.alvr-git
       nur.repos.Adamekka.chatgpt
       nur.repos.Adamekka.gdstash
       nur.repos.Adamekka.github-desktop
@@ -275,17 +276,6 @@
   };
 
   programs = {
-    alvr = {
-      enable = true;
-      openFirewall = true;
-      package = pkgs.alvr.overrideAttrs (old: {
-        postInstall = (old.postInstall or "") + ''
-          mkdir -p $out/bin/platform-tools
-          ln -s ${pkgs.android-tools}/bin/adb \
-            $out/bin/platform-tools/adb
-        '';
-      });
-    };
     bat.enable = true;
     dconf = {
       enable = true;
