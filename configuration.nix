@@ -105,7 +105,6 @@
       dust
       dualsensectl
       # element-desktop
-      etterna
       # eww
       eza
       fastfetch
@@ -148,6 +147,7 @@
       ntfs3g
       nur.repos.Adamekka.alvr-git
       nur.repos.Adamekka.chatgpt
+      nur.repos.Adamekka.etterna
       nur.repos.Adamekka.gdstash
       nur.repos.Adamekka.github-desktop
       nur.repos.Adamekka.linux-wallpaperengine-git
