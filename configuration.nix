@@ -82,6 +82,7 @@
       alacritty
       amdgpu_top
       # android-studio
+      android-tools
       # ani-cli
       # antares
       apfs-fuse
