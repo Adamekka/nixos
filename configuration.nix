@@ -158,7 +158,6 @@
       nur.repos.Adamekka.wondershaper
       # nur.repos.nltch.spotify-adblock
       onefetch
-      opencode
       (osu-lazer-bin.override {
         nativeWayland = true;
       })
