@@ -235,6 +235,7 @@
       enable32Bit = true;
       extraPackages = with pkgs; [ ];
     };
+    uinput.enable = true;
   };
 
   networking = {
@@ -433,6 +434,12 @@
     # printing.enable = true;
     pulseaudio.support32Bit = true;
     scx.enable = true;
+    sunshine = {
+      autoStart = true;
+      capSysAdmin = true;
+      enable = true;
+      openFirewall = true;
+    };
     tailscale.enable = true;
     tumbler.enable = true;
     xserver = {
@@ -475,6 +482,7 @@
       "adbusers"
       "docker"
       "libvirtd"
+      "uinput"
       "wheel"
     ];
     isNormalUser = true;
