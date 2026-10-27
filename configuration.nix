@@ -9,7 +9,7 @@
 
   boot = {
     extraModulePackages = with config.boot.kernelPackages; [
-      hid-t150
+      # hid-t150
       # zenpower
     ];
     initrd.kernelModules = [
@@ -19,7 +19,7 @@
     ];
     kernel.sysctl."kernel.core_pattern" = "/dev/null";
     kernelModules = [
-      "hid-t150"
+      # "hid-t150"
     ];
     kernelPackages = pkgs.cachyosKernels.linuxPackages-cachyos-latest-lto-zen4;
     kernelParams = [
