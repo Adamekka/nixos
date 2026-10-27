@@ -8,6 +8,10 @@
   ];
 
   boot = {
+    # Set the Wi-Fi country before the hotspot starts, even without an uplink.
+    extraModprobeConfig = ''
+      options cfg80211 ieee80211_regdom=CZ
+    '';
     extraModulePackages = with config.boot.kernelPackages; [
       # hid-t150
       # zenpower
@@ -251,8 +255,49 @@
       enable = false;
     };
     hostName = "nixos";
-    networkmanager.enable = true;
+    networkmanager = {
+      enable = true;
+      ensureProfiles.profiles.nixos-hotspot = {
+        connection = {
+          autoconnect = true;
+          autoconnect-priority = 100;
+          # Retry indefinitely so a temporary radio failure does not disable the hotspot.
+          autoconnect-retries = 0;
+          id = "nixos";
+          interface-name = "nixos";
+          type = "wifi";
+          uuid = "36c18a99-6b1b-4bea-be0b-7701b42f5755";
+        };
+        ipv4.method = "shared";
+        ipv6.method = "disabled";
+        wifi = {
+          band = "a";
+          # The card supports one channel for AP + client; match the existing 5 GHz uplink.
+          channel = 36;
+          mode = "ap";
+          ssid = "nixos";
+        };
+        wifi-security = {
+          # WPA3-only with AES and required management-frame protection avoids legacy WPA/TKIP.
+          group = "ccmp;";
+          key-mgmt = "sae";
+          pairwise = "ccmp;";
+          pmf = 3;
+          proto = "rsn;";
+          psk = "nixos123";
+        };
+      };
+    };
     wireless.userControlled = true;
+    # Retain the client interface while creating a separate interface for the hotspot at boot.
+    wlanInterfaces = {
+      nixos = {
+        device = "wlp15s0";
+        # Give the hotspot its own locally administered MAC on the shared radio.
+        mac = "2e:9c:58:6e:d6:ed";
+      };
+      wlp15s0.device = "wlp15s0";
+    };
   };
 
   nix.settings = {
@@ -457,6 +502,20 @@
 
   systemd = {
     coredump.enable = false;
+    services.NetworkManager-ensure-profiles = {
+      after = [ "sys-subsystem-net-devices-nixos.device" ];
+      # Activate the declared hotspot even if the old saved profile connected first.
+      postStart = ''
+        ${pkgs.networkmanager}/bin/nmcli connection up nixos
+      '';
+      requires = [ "sys-subsystem-net-devices-nixos.device" ];
+      # The interface can appear before the supplicant is ready; retry activation failures.
+      serviceConfig = {
+        Restart = "on-failure";
+        RestartSec = 5;
+      };
+      unitConfig.StartLimitIntervalSec = 0;
+    };
     tmpfiles.rules = [
       "L+ /bin/bash - - - - ${pkgs.bash}/bin/bash"
     ];
