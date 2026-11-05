@@ -478,7 +478,6 @@
     playerctld.enable = true;
     # printing.enable = true;
     pulseaudio.support32Bit = true;
-    scx.enable = true;
     sunshine = {
       autoStart = true;
       capSysAdmin = true;
