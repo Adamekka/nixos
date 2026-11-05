@@ -137,7 +137,7 @@
       lmstudio
       lsfg-vk
       lsfg-vk-ui
-      # lutris
+      lutris
       # mako
       # mangohud
       # mangojuice
